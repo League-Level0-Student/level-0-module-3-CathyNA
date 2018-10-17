@@ -4,11 +4,20 @@
 package elseif;
 
 import java.net.URI;
+import javax.swing.JOptionPane;
+import javax.swing.text.StyledEditorKit.ForegroundAction;
 
 public class CrazyCatLady {
 	public static void main(String[] args) {
 		// 1. Ask the user how many cats they have
-
+String num=JOptionPane.showInputDialog("How many cats do you have?");
+int x=Integer.parseInt(num);
+if(x>=3) {
+	JOptionPane.showMessageDialog(null, "You are a crazy cat lady");
+}
+else if(x<=0) {
+playVideo(www.youtube.com/watch?v=oj_yLBltPE8);
+}
 		// 2. Convert their answer into an int
 
 		// 3. If they have 3 or more cats, tell them they are a crazy cat lady
